@@ -9,6 +9,14 @@ public class Transaction {
     private String location;
     private String category;
 
+    public Transaction(double amount, String transaction_type, Date date, String location, String category) {
+        this.amount = amount;
+        this.transaction_type = transaction_type;
+        this.date = date;
+        this.location = location;
+        this.category = category;
+    }
+
     public double getAmount() {
         return amount;
     }
